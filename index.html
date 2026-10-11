@@ -2,8 +2,9 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#07111c"><title>TV Hub — Your family cinema</title>
+<meta name="theme-color" content="#07111c"><title>VOLT — Your personal cinema</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="volt-theme.css">
 </head>
 <body>
 <div id="previewEnvironmentNote" role="status" style="margin:12px auto;max-width:880px;padding:13px 16px;background:#122d48;color:#e3f1ff;border:1px solid #3777a9;border-radius:12px;font:14px/1.45 system-ui,sans-serif">You are viewing the website file, not the live website. If the buttons do not respond, upload <b>index.html</b> to a web host and open the HTTPS address in Safari. The iPhone file preview might not run scripts.</div>
@@ -13,7 +14,7 @@
 <div id="app" class="app">
 <header class="masthead">
   <button class="icon-button mobile-menu-btn" id="menuBtn" aria-label="Open menu"><svg class="icon"><use href="#i-menu"/></svg></button>
-  <button class="brand" data-view="home" aria-label="TV Hub home"><span class="mark"></span><span>TV <strong>Hub</strong></span></button>
+  <button class="brand" data-view="home" aria-label="VOLT home"><span class="mark"></span><span>VOLT</span></button>
   <nav class="desk-nav" id="topNav" aria-label="Main navigation">
     <button data-view="home" class="active">Home</button><button data-view="movies">Movies</button><button data-view="tv">TV</button><button data-view="kids">Kids</button><button data-view="favourites">My List</button>
   </nav>
@@ -29,11 +30,11 @@
 <aside class="rail"><section class="rail-panel"><div class="rail-heading"><strong>Continue Watching</strong><button class="seeall" data-view="continue">See All ›</button></div><div id="railProgress"></div></section><section class="rail-panel"><div class="rail-heading"><strong>My List</strong><button class="seeall" data-view="favourites">See All ›</button></div><div id="railFaves" class="mini-favs"></div></section></aside></div>
 <section class="shelf wide-shelf"><div class="shelf-title"><h2>Recently Added</h2><button data-view="recent" aria-label="View recently added">›</button></div><div class="shelf-track" id="recentShelf"></div></section>
 <div class="category-grid" id="categoryGrid"></div></div>
-<section class="catalog hidden" id="catalog"><p class="catalog-eyebrow">YOUR PRIVATE CINEMA</p><h1 id="catalogTitle">Movies</h1><p id="catalogSub" class="catalog-sub"></p><div id="catalogFilters" class="catalog-filters hidden"></div><div id="catalogGrid" class="catalog-grid"></div></section>
+<section class="catalog hidden" id="catalog"><p class="catalog-eyebrow">WATCH · EXPLORE · ENJOY</p><h1 id="catalogTitle">Movies</h1><p id="catalogSub" class="catalog-sub"></p><div id="catalogFilters" class="catalog-filters hidden"></div><div id="catalogGrid" class="catalog-grid"></div></section>
 </main></div>
 <nav class="bottom-nav" id="bottomNav" aria-label="Mobile navigation"><button class="active" data-view="home"><svg class="icon"><use href="#i-home"/></svg> Home</button><button data-view="movies"><svg class="icon"><use href="#i-film"/></svg> Movies</button><button data-view="tv"><svg class="icon"><use href="#i-tv"/></svg> TV</button><button data-view="favourites"><svg class="icon"><use href="#i-heart"/></svg> My List</button><button data-view="profiles"><svg class="icon"><use href="#i-kids"/></svg> Profiles</button></nav>
 </div>
-<div id="modalLayer" class="modal-layer hidden" role="presentation"><div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="TV Hub dialogue"><button class="modal-close" id="modalClose" aria-label="Close dialogue"><svg class="icon"><use href="#i-x"/></svg></button><div id="modalContent"></div></div></div>
+<div id="modalLayer" class="modal-layer hidden" role="presentation"><div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="VOLT dialogue"><button class="modal-close" id="modalClose" aria-label="Close dialogue"><svg class="icon"><use href="#i-x"/></svg></button><div id="modalContent"></div></div></div>
 <div id="toast" class="toast hidden" role="status"></div>
 <script src="assets.js" defer></script>
 <script src="app.js" defer></script>
