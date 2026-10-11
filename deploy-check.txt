@@ -1,0 +1,4 @@
+TV HUB AUTO-DEPLOY CHECK
+GitHub repository: ihdkfr/tv-hub
+Update: 2026-10-11
+If you can read this text on precious-churros-6589d3.netlify.app/deploy-check.txt, Netlify has published a new change from GitHub.
