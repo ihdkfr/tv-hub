@@ -1,0 +1,56 @@
+/* VOLT design system. Preserves the existing interactive routes and family controls. */
+:root{--bg:#030509;--bg2:#07090e;--panel:#0b0d15;--border:#24212d;--border-soft:#24212d;--ink:#f8f6fa;--sub:#a8a5b4;--blue:#8a17f5;--blue2:#d4a0ff;--shadow:0 22px 65px #000b}
+html{background:#030509}body{background:radial-gradient(ellipse at 80% 0%,#261320 0%,#06060c 44%,#030509 80%);color:#f8f6fa}
+.masthead{background:#08080dcc;border-color:#2c2432;backdrop-filter:blur(24px);height:76px;padding:0 28px}
+.brand{font-size:27px;letter-spacing:5px;font-weight:850;gap:12px;color:#fff}
+.brand .mark{width:31px;height:36px;clip-path:polygon(0 0,42% 0,54% 30%,66% 0,100% 0,60% 100%,42% 100%);background:linear-gradient(145deg,#fff,#bfb7c9);border-radius:0}
+.brand .mark:after{display:none}.brand strong{color:#fff;font-weight:850}
+.desk-nav button.active:after{background:#8b20f4;box-shadow:0 0 12px #8b20f480}
+.search-box{background:#ffffff13;border:1px solid #ffffff30;height:46px;border-radius:13px;width:clamp(240px,31vw,550px)}
+.search-box input{font-size:13px}.search-box input::placeholder{color:#c0b6c3}
+.account-btn img{border-color:#2fb5e7;width:39px;height:39px}
+.workarea{grid-template-columns:230px minmax(0,1fr);min-height:calc(100vh - 76px)}
+.sidebar{top:76px;height:calc(100vh - 76px);background:linear-gradient(180deg,#06070d,#05070c);border-color:#211b2a;padding:22px 14px}
+.sidebar-heading{color:#d7c7dd;font-size:11px;letter-spacing:1.3px;text-transform:uppercase}
+.profile-entry.active{background:#25143e;border-color:#6331b3;box-shadow:inset 3px 0 #a43bff}
+.profile-entry:hover:not(.active){background:#211729}
+.sidebar-divider{border-color:#28202f}.side-link{color:#c8c5d0;font-size:14px;border-radius:12px;padding:13px 15px}
+.side-link.active{color:white;background:linear-gradient(110deg,#9413ed,#091b50);box-shadow:0 8px 24px #6e12e02a}
+.side-link:hover{background:#281a39;color:white}
+.side-lower{border-color:#27202e}
+.page{padding:0 24px 60px}.top-layout{display:block}.rail{display:none}
+.hero{height:clamp(420px,36vw,570px);border:0;border-radius:0 0 18px 18px;background:#130a12}
+.hero-image{width:100%;filter:saturate(1.17) contrast(1.08);background-position:center 34%}
+.hero:after{background:linear-gradient(90deg,#05050bf5 0%,#05050be8 16%,#09080cc9 34%,#120c1033 67%,transparent 100%),linear-gradient(0deg,#05050a 0%,transparent 40%)}
+.hero .hero-content{max-width:56%;padding:36px 42px}
+.hero-eyebrow{font-size:11px;letter-spacing:3px;color:#ffb476}
+.hero-eyebrow b{color:#ff9a49}
+.hero-title{font-size:clamp(48px,5.3vw,93px);font-weight:430;letter-spacing:.24em;line-height:1.02;margin:15px 0}
+.hero-subtitle{font-size:11px;letter-spacing:4px}
+.hero-desc{font-size:15px;max-width:490px;color:#f1e9e7}
+.meta-row{font-size:13px;color:#eee7ec}
+.primary{background:linear-gradient(120deg,#ff8a30,#ffab49);border:1px solid #ffb45d;color:#120a08;box-shadow:0 9px 28px #ff6b243c}
+.secondary{background:#171822d9;border:1px solid #6a5c70;color:#fff}
+.secondary:hover{background:#2b2534}
+.hero-pagination .current{background:#ff8d36}
+.hero-pagination button{cursor:pointer}
+.shelf{margin-top:25px}.shelf-title{margin-bottom:13px}.shelf-title h2{font-size:21px;font-weight:700;letter-spacing:-.45px}
+.shelf-title button:hover{color:#ffa05c}
+.shelf-track{gap:14px;scrollbar-color:#663d68 transparent}
+.tile{flex-basis:clamp(170px,15vw,245px);aspect-ratio:1.18;border-radius:11px;border-color:#403142;background:#13121b}
+.tile .bar>i,.progress-fill{background:linear-gradient(90deg,#ff8635,#ad3aff)}
+.wide-shelf .tile{flex-basis:clamp(170px,15vw,245px);aspect-ratio:1.2}
+.category-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:26px}
+.category-panel{background:#0b0a10;border-color:#2b2231;border-radius:14px}
+.category-panel .shelf-title h2{font-size:16px}
+.category-panel .tile{aspect-ratio:1.4}
+.catalog{padding:35px 12px 60px}
+.catalog-eyebrow,.modal-eyebrow{color:#ff9b4b}.catalog-card{background:#100e16;border-color:#302538}
+.catalog-card:hover{box-shadow:0 12px 30px #0008}
+.modal{background:linear-gradient(140deg,#1c1224,#090b12);border-color:#473348}
+.modal-layer{background:#030309e8}
+.modal input:not([type=file]),.modal select{background:#16121e;border-color:#51405b}
+.toast{background:#24142f;border-color:#7443a2}
+@media(min-width:1000px){.mobile-profiles{display:none!important}}
+@media(max-width:999px){.workarea{display:block}.sidebar{top:0;height:100dvh}.page{padding:0 14px 90px}.top-layout{display:block}.rail{display:none}.hero{height:clamp(380px,68vw,530px);border-radius:17px}.hero .hero-content{max-width:76%;padding:24px}.hero-title{font-size:clamp(36px,6vw,70px)}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mobile-profiles{display:flex}.masthead{height:70px;padding:0 16px}}
+@media(max-width:600px){.masthead{height:66px;padding:0 12px;gap:9px}.brand{font-size:22px;letter-spacing:2.5px;gap:5px}.brand .mark{width:24px;height:29px}.top-actions{gap:8px}.search-box{min-width:0;width:clamp(115px,31vw,205px);height:39px;padding:0 9px}.search-box input{font-size:11px}.account-btn img{width:33px;height:33px}.page{padding:0 12px 96px}.mobile-profiles{padding:13px 0 12px}.hero{height:440px;border-radius:16px;background:#160c15}.hero-image{width:100%;background-position:60% center}.hero:after{background:linear-gradient(0deg,#05050bee 0%,#06050bd1 35%,#06050b28 80%),linear-gradient(90deg,#05050b65,transparent 80%)}.hero .hero-content{justify-content:flex-end;max-width:100%;padding:20px 20px 44px}.hero-title{font-size:clamp(33px,8vw,51px);letter-spacing:.15em;margin:10px 0}.hero-subtitle{letter-spacing:2px}.hero-desc{font-size:12px;line-height:1.4;margin:9px 0 13px}.hero-eyebrow{font-size:10px;letter-spacing:2px}.meta-row{font-size:11px;gap:6px}.primary,.secondary{padding:10px 16px;min-height:42px}.shelf{margin-top:22px}.shelf-title h2{font-size:19px}.tile,.wide-shelf .tile{flex-basis:clamp(140px,40vw,185px);aspect-ratio:1.18}.category-grid{grid-template-columns:1fr 1fr;gap:8px}.category-panel{padding:8px}.category-panel .shelf-title h2{font-size:13px}.bottom-nav{background:#0b0813f5;border-top:1px solid #382741;backdrop-filter:blur(16px)}.bottom-nav button.active{color:#c881ff}.catalog{padding:22px 4px}.catalog h1{font-size:28px}.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
